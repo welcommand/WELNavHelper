@@ -35,7 +35,7 @@
 }
 
 -(CGFloat)touch_off {
-    return [objc_getAssociatedObject(self, @selector(touch_off)) floatValue];
+    return [objc_getAssociatedObject(self, _cmd) floatValue];
 }
 
 -(void)WEL_beganTouchOffset:(UITouch *)touch {
